@@ -1,0 +1,40 @@
+<div class="container p-2">
+    <div class="row">
+        <div class="tabla">
+                        <table class="table">
+                 <thead>
+                      <tr>
+                          <th>Link</th>
+                          <th>Nombre</th>
+                          <th>Agregado</th>
+                          <th>Editar</th>
+                          <th>Eliminar</th>
+                      </tr>
+                 </thead>
+                 <tbody>
+                             {{#each links}}
+                     <tr>
+                         <th>                        <a href="{{url}}" target="_blank">
+                            <p class="card-title">
+                                {{title}}
+                            </p>
+                        </a></th>
+                         <th>{{description}}</th>
+                         <th>{{timeago created_at}}</th>
+                         <th><a href="/links/edit/{{id}}" class="btn btn-secondary">Edit</a></th>
+                         <th><a href="/links/delete/{{id}}" class="btn btn-danger">Delete link</a></th>
+                     </tr>
+                                     {{else}}
+            <div class="col-md-4 card mx-auto">
+                <a href="/links/add">
+                <p>Empty list, add one!</p>
+                </a>
+            </div>
+                             {{/each}}    
+                 </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>

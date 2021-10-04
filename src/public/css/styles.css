@@ -1,0 +1,17 @@
+html {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.form-group {
+  margin: 10px 0;
+}
+.indexban {
+  height: 60vw;
+  background: url(https://cdn.wallpapersafari.com/6/29/qtCfLj.jpg);
+  display: flex;
+  place-items: center;
+  color: white;
+  justify-content: center;
+}
+.indexban h2 {
+  font-size: 45px;
+}
